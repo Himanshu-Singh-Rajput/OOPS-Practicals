@@ -1,0 +1,3 @@
+Q - Explain why Java supports multiple inheritance through interfaces but not through multiple parent classes?
+Ans - Java does not support multiple inheritance with classes to avoid the 'Diamond Problem' (ambiguity). If a child class inherits from two parent classes that both have a method with the exact same name, the compiler will be confused about which method to call.
+However, interfaces only declare methods without providing a body (implementation). When a class implements multiple interfaces, it must write its own body for those methods. Because the child class provides the implementation, there is no confusion. This is why Java safely allows multiple inheritance through interfaces but not classes.
